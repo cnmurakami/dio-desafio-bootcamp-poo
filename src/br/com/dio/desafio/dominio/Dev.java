@@ -15,7 +15,7 @@ public class Dev {
         bootcamp.getDevInscritos().add(this);
     }
 
-    public void progradir(){
+    public void progredir(){
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
         if (conteudo.isPresent()){
             this.conteudosConcluidos.add(conteudo.get());
